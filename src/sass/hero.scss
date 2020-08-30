@@ -1,0 +1,19 @@
+
+  
+  .hero{
+    //border: solid red 4px;
+    text-align:center;
+    padding-bottom: 4em;
+    .copy{
+        margin-bottom: 2.6em;
+    }
+    &__image{     
+        margin: 0 calc(-1 * var(--wapperSpace));
+        height: 300px;
+        // primer imagen de fondo center: pára centrar, no-repeeat.: para no repetir y bottom:para que empiece desde abajo , seunda imagen de fondo de tras
+        background:url('/static/images/image-mockups.png')center bottom no-repeat, url('/static/images/bg-intro-mobile.svg')center no-repeat;
+        background-size: 345px, cover; // ancho de imagen de fondo1 , ancho fondo 2
+        margin-bottom: 1em;
+      }
+      
+  }

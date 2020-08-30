@@ -1,0 +1,72 @@
+.footer{
+    padding: 2em 0;
+    background:var(--darkBlue);
+    color:var(white);
+//border:solid red 2px;
+    &__social{
+        display: grid;
+        grid-template-columns: repeat(5, 25px); // 5 elementos de 25 pixeles cada uno
+        grid-column-gap: 1em; // espacio enre ellos
+        justify-content: center;
+        margin: 2.5em 0;
+        // display: flex;
+        // justify-content: center;
+    }
+    svg{
+        display: block;
+        margin:auto;
+        margin-bottom: 2em;
+    }
+    &__link{
+        display: block;
+        color: var(--gray);
+        text-decoration:none;
+        text-align: center;
+        margin-bottom: 1.5em;
+        
+    }
+    &__copyright{
+        color: var(--graBlue);
+    }
+    &__button{
+        display: inline-block;
+       margin:0;
+        margin: 0 4em;
+      // border: solid red 2px;
+    }
+    &__copyright{
+        text-align: center;
+      
+    }
+}
+
+@mixin icon {
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    
+}
+.icon{
+    &_facebook{
+        @include icon;
+        background:url('/static/images/icon-facebook.svg')no-repeat;
+    }
+    &_youtube{
+        @include icon;
+        background:url('/static/images/icon-youtube.svg')no-repeat;
+    }
+    &_pinteres{
+        @include icon;
+        background:url('/static/images/icon-pinterest.svg')no-repeat;
+    }
+    &_twiter{
+        @include icon;
+        background:url('/static/images/icon-twitter.svg')no-repeat;
+    }
+    &_instagram{
+        @include icon;
+        background:url('/static/images/icon-instagram.svg')no-repeat;
+    }
+}
+
+

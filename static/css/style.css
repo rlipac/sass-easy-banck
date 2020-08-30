@@ -1,0 +1,216 @@
+.header {
+  display: flex;
+  padding: 1em 1.3em 1em 1.3em;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 4em;
+}
+.hero .copy {
+  margin-bottom: 2.6em;
+}
+.hero__image {
+  margin: 0 calc(-1 * var(--wapperSpace));
+  height: 300px;
+  background: url("/static/images/image-mockups.png") center bottom no-repeat, url("/static/images/bg-intro-mobile.svg") center no-repeat;
+  background-size: 345px, cover;
+  margin-bottom: 1em;
+}
+
+.menu {
+  padding: 0.7em 1.2em;
+  background: url("/static/images/icon-hamburger.svg") center no-repeat;
+}
+
+.why {
+  padding-top: 4em;
+  background-color: var(--gray);
+  text-align: center;
+}
+.why__item .copy {
+  font-size: 0.91em;
+}
+.why__item img {
+  margin-top: 1.4em;
+  margin-bottom: 0.3em;
+}
+
+.latesArticles {
+  margin-top: -1em;
+  padding: 5em 0;
+  background: #fafafa;
+}
+.latesArticles__grid {
+  display: grid;
+  grid-row-gap: 3em;
+}
+.latesArticles__item {
+  background: white;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+.latesArticles__item__content {
+  padding: 0 2em;
+  margin-top: 1.7em;
+}
+.latesArticles__item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.latesArticles__item .copy {
+  font-size: 0.76em;
+}
+.latesArticles small {
+  font-size: 0.7em;
+  color: var(--grarBlue);
+  display: block;
+  margin-bottom: 1em;
+}
+
+.footer {
+  padding: 2em 0;
+  background: var(--darkBlue);
+  color: var(white);
+}
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1em;
+  justify-content: center;
+  margin: 2.5em 0;
+}
+.footer svg {
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.footer__link {
+  display: block;
+  color: var(--gray);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.footer__copyright {
+  color: var(--graBlue);
+}
+.footer__button {
+  display: inline-block;
+  margin: 0;
+  margin: 0 4em;
+}
+.footer__copyright {
+  text-align: center;
+}
+
+.icon_facebook {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background: url("/static/images/icon-facebook.svg") no-repeat;
+}
+.icon_youtube {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background: url("/static/images/icon-youtube.svg") no-repeat;
+}
+.icon_pinteres {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background: url("/static/images/icon-pinterest.svg") no-repeat;
+}
+.icon_twiter {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background: url("/static/images/icon-twitter.svg") no-repeat;
+}
+.icon_instagram {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background: url("/static/images/icon-instagram.svg") no-repeat;
+}
+
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --LimeGreen: hsl(136, 65%, 51%);
+  --BrightCyan: hsl(192, 70%, 51%);
+  --grayBlue: hsl(233, 8%, 62%);
+  --gray: hsl(220, 16%, 96%);
+  --lightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --wapperSpace:1.5em;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  color: var(--grayBlue);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.wapper {
+  padding: 0 var(--wapperSpace);
+}
+
+.copy {
+  font-size: 0.87em;
+  line-height: 1.6em;
+}
+
+.title__h1 {
+  font-size: 2.2em;
+  color: var(--darkBlue);
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.6em;
+}
+.title__h2 {
+  font-size: 2.2em;
+  color: var(--darkBlue);
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.6em;
+  font-size: 1.9em;
+  font-weight: 500;
+  text-align: center;
+}
+.title__h3 {
+  font-size: 2.2em;
+  color: var(--darkBlue);
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.title__h4 {
+  font-size: 2.2em;
+  color: var(--darkBlue);
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.6em;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.button {
+  border: none;
+  padding: 0.7em 2.1em;
+  font-size: 1em;
+  border-radius: 1.2em;
+  color: var(--White);
+  background: linear-gradient(to right, var(--LimeGreen) 0%, var(--BrightCyan));
+}
+
+/*# sourceMappingURL=style.css.map */

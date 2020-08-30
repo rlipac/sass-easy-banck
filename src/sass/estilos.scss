@@ -1,0 +1,137 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// - Dark Blue: hsl(233, 26%, 24%)
+// - Lime Green: hsl(136, 65%, 51%)
+// - Bright Cyan: hsl(192, 70%, 51%)
+
+// ### Neutral
+
+// - Grayish Blue: hsl(233, 8%, 62%)
+// - Light Grayish Blue: hsl(220, 16%, 96%)
+// - Very Light Gray: hsl(0, 0%, 98%)
+// - White: hsl(0, 0%, 100%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size: 18px
+
+// ### Font
+
+// - Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+// - Weights: 300, 400, 700
+
+
+@import "./header.scss";
+@import "./hero.scss";
+@import "./menu.scss";
+@import "./why.scss";
+@import "./latesArticles.scss";
+@import "./footer.scss";
+
+
+:root{
+
+    //  Primary
+
+--darkBlue: hsl(233, 26%, 24%);
+--LimeGreen: hsl(136, 65%, 51%);
+--BrightCyan: hsl(192, 70%, 51%);
+  
+    // Neutral
+
+--grayBlue: hsl(233, 8%, 62%);
+--gray: hsl(220, 16%, 96%);
+--lightGray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+--wapperSpace:1.5em;
+ font-size: 16px;
+
+
+}
+
+body{
+    
+    font-family: 'Public Sans', sans-serif;
+    margin:0;
+    color: var(--grayBlue);
+    
+    // font-size: 18px;
+}
+.is-hidden{
+    display: none;
+}
+
+
+
+.wapper{
+   
+    padding: 0 var(--wapperSpace);
+
+   
+}
+.copy{
+    font-size: .87em;
+  
+    line-height: 1.6em;
+  // border: solid lightblue 3px;
+  }
+
+  @mixin title {
+        font-size:2.2em ;
+        color: var(--darkBlue);
+        font-weight: 400; // sirve para cambiar el peso de la fuente
+        line-height: 1.3em; // cambia la separacion que hay entre un line a de texto y la otra
+        // margin-top:1.2em;
+        margin-bottom: .6em;
+  }
+
+.title{
+  
+    &__h1{ // & sive para concatenar clases en sass
+        //border: solid 2px blue;
+        @include title;
+        
+
+       
+    }
+    &__h2{
+         @include title;
+        font-size: 1.9em ;
+        font-weight: 500; 
+        text-align: center;
+     
+    }
+    &__h3{
+       @include title;
+        font-size: 1.1em;
+        font-weight: 400; 
+    }
+    &__h4{
+        @include title;
+         font-size: .9em;
+         font-weight: 400; 
+     }
+}
+
+.button{
+   //border: solid 1px red;
+   border: none; 
+   padding:.7em 2.1em;
+   font-size: 1em;
+    border-radius: 1.2em;
+    color:var(--White);
+    background: linear-gradient(to right,var(--LimeGreen) 0%, var(--BrightCyan));
+}
