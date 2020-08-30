@@ -9,8 +9,9 @@
         grid-column-gap: 1em; // espacio enre ellos
         justify-content: center;
         margin: 2.5em 0;
-        // display: flex;
-        // justify-content: center;
+        //  display: flex;
+        //  justify-content: center;
+         
     }
     svg{
         display: block;
@@ -23,15 +24,22 @@
         text-decoration:none;
         text-align: center;
         margin-bottom: 1.5em;
+
+            // display: flex;
+            // justify-content: center;
+            // flex-direction: column;
+            // color: var(--gray);
+            // text-decoration:none;
+            // align-items: center;
+            //  margin-bottom: 1.5em;
         
     }
     &__copyright{
         color: var(--graBlue);
     }
     &__button{
-        display: inline-block;
-       margin:0;
-        margin: 0 4em;
+        display: block;
+     
       // border: solid red 2px;
     }
     &__copyright{

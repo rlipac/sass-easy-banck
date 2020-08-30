@@ -25,7 +25,7 @@
 }
 
 .why {
-  padding-top: 4em;
+  padding: 3em 0;
   background-color: var(--gray);
   text-align: center;
 }
@@ -38,8 +38,8 @@
 }
 
 .latesArticles {
-  margin-top: -1em;
-  padding: 5em 0;
+  padding-top: 4em;
+  padding-bottom: 4.6em;
   background: #fafafa;
 }
 .latesArticles__grid {
@@ -98,9 +98,7 @@
   color: var(--graBlue);
 }
 .footer__button {
-  display: inline-block;
-  margin: 0;
-  margin: 0 4em;
+  display: block;
 }
 .footer__copyright {
   text-align: center;
@@ -205,6 +203,8 @@ body {
 }
 
 .button {
+  display: block;
+  margin: auto;
   border: none;
   padding: 0.7em 2.1em;
   font-size: 1em;

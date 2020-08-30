@@ -127,7 +127,8 @@ body{
 }
 
 .button{
-   //border: solid 1px red;
+   display:block;
+   margin: auto;
    border: none; 
    padding:.7em 2.1em;
    font-size: 1em;
